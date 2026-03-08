@@ -5,11 +5,12 @@
 }
 
 :root {
-    --primary: #1E5A8E;
-    --secondary: #F7941D;
-    --dark: #2C3E50;
+    --primary: #0A0A0A;
+    --secondary: #D4AF37;
+    --gold: #F4C430;
+    --dark: #1A1A1A;
     --light: #F8F9FA;
-    --accent: #00A8E1;
+    --accent: #FFD700;
 }
 
 body {
@@ -117,8 +118,8 @@ body {
 
 .cta-button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 15px 40px rgba(247, 148, 29, 0.5);
-    background: #E6850D;
+    box-shadow: 0 15px 40px rgba(212, 175, 55, 0.5);
+    background: #C49F2E;
 }
 
 /* Navigation */
@@ -146,14 +147,14 @@ nav.scrolled {
 }
 
 .logo {
-    font-family: 'Bebas Neue', cursive;
-    font-size: 2rem;
-    color: white;
-    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
-nav.scrolled .logo {
-    color: var(--primary);
+.logo img {
+    height: 50px;
+    width: auto;
 }
 
 .nav-links {
@@ -297,12 +298,12 @@ section.visible {
 .pricing-card.featured {
     border-color: var(--secondary);
     transform: scale(1.05);
-    box-shadow: 0 10px 40px rgba(247, 148, 29, 0.3);
+    box-shadow: 0 10px 40px rgba(212, 175, 55, 0.3);
 }
 
 .pricing-card.featured:hover {
     transform: scale(1.05) translateY(-10px);
-    box-shadow: 0 20px 50px rgba(247, 148, 29, 0.4);
+    box-shadow: 0 20px 50px rgba(212, 175, 55, 0.4);
 }
 
 .badge-featured {
@@ -311,13 +312,13 @@ section.visible {
     left: 50%;
     transform: translateX(-50%);
     background: var(--secondary);
-    color: white;
+    color: var(--dark);
     padding: 0.5rem 1.5rem;
     border-radius: 20px;
     font-weight: 700;
     font-size: 0.85rem;
     letter-spacing: 1px;
-    box-shadow: 0 3px 10px rgba(247, 148, 29, 0.4);
+    box-shadow: 0 3px 10px rgba(212, 175, 55, 0.4);
 }
 
 .pricing-header {
@@ -388,7 +389,7 @@ section.visible {
 
 .pricing-btn {
     background: var(--primary);
-    color: white;
+    color: var(--gold);
     padding: 1rem 2rem;
     border: none;
     border-radius: 50px;
@@ -396,24 +397,27 @@ section.visible {
     font-weight: 700;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 5px 20px rgba(30, 90, 142, 0.3);
+    box-shadow: 0 5px 20px rgba(10, 10, 10, 0.3);
     width: 100%;
+    border: 2px solid var(--gold);
 }
 
 .pricing-btn:hover {
-    background: var(--accent);
+    background: var(--dark);
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(30, 90, 142, 0.4);
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
 }
 
 .pricing-btn.featured-btn {
     background: var(--secondary);
-    box-shadow: 0 5px 20px rgba(247, 148, 29, 0.3);
+    color: var(--dark);
+    box-shadow: 0 5px 20px rgba(212, 175, 55, 0.3);
+    border: none;
 }
 
 .pricing-btn.featured-btn:hover {
-    background: #E6850D;
-    box-shadow: 0 8px 25px rgba(247, 148, 29, 0.5);
+    background: #C49F2E;
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.5);
 }
 
 .pricing-note {
@@ -580,7 +584,7 @@ section.visible {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(30, 90, 142, 0.92) 0%, rgba(22, 72, 110, 0.92) 100%);
+    background: linear-gradient(135deg, rgba(10, 10, 10, 0.92) 0%, rgba(26, 26, 26, 0.92) 100%);
     z-index: 0;
 }
 
@@ -819,9 +823,9 @@ section.visible {
 }
 
 .submit-btn:hover {
-    background: #E6850D;
+    background: #C49F2E;
     transform: translateY(-3px);
-    box-shadow: 0 15px 40px rgba(247, 148, 29, 0.5);
+    box-shadow: 0 15px 40px rgba(212, 175, 55, 0.5);
 }
 
 .form-message {
@@ -885,14 +889,14 @@ footer {
     width: 65px;
     height: 65px;
     background: var(--secondary);
-    color: white;
+    color: var(--dark);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.8rem;
     text-decoration: none;
-    box-shadow: 0 5px 25px rgba(255, 152, 0, 0.5);
+    box-shadow: 0 5px 25px rgba(212, 175, 55, 0.5);
     z-index: 1000;
     transition: all 0.3s ease;
     animation: pulse 2s infinite;
@@ -900,15 +904,15 @@ footer {
 
 .floating-call-btn:hover {
     transform: scale(1.1);
-    box-shadow: 0 8px 35px rgba(255, 152, 0, 0.7);
+    box-shadow: 0 8px 35px rgba(212, 175, 55, 0.7);
 }
 
 @keyframes pulse {
     0%, 100% {
-        box-shadow: 0 5px 25px rgba(255, 152, 0, 0.5);
+        box-shadow: 0 5px 25px rgba(212, 175, 55, 0.5);
     }
     50% {
-        box-shadow: 0 5px 35px rgba(255, 152, 0, 0.8);
+        box-shadow: 0 5px 35px rgba(212, 175, 55, 0.8);
     }
 }
 
